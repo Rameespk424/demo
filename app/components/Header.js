@@ -87,7 +87,7 @@ export default function Navbar() {
     <section className="">
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ease-in-out ${
-          scrolled ? "bg-gray-800" : "bg-transparent"
+          scrolled ? "bg-gray-400" : "bg-transparent"
         }`}
       >
         <div className="container mx-auto px-4">
