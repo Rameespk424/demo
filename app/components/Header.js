@@ -136,8 +136,8 @@ export default function Navbar() {
 
                 <div className="hidden md:block">
                   <Link href="/contact" passHref>
-                    <Button className="bg-gray-50 text-slate-950  hover:bg-blue-700 w-full lg:w-auto">
-                      Contact Us
+                    <Button className="bg-gray-50   hover:bg-blue-700 w-full lg:w-auto">
+                     <span className="text-black">Conatct Us </span>
                     </Button>
                   </Link>
                 </div>

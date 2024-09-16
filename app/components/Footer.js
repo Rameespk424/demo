@@ -87,7 +87,7 @@ const Footer = () => {
           </div>
 
           {/* Column 3: Address and Follow Us Links */}
-          <div className="flex flex-col gap-3 pl-10">
+          <div className="flex flex-col gap-3 pl-0 lg:pl-20">
             <h4 className="text-lg font-medium mb-0">Contact Us</h4>
             <p className='font-sans'>
               Lorem Ipsum, Iso lorem, Iso Lorem Posum
