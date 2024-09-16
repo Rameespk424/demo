@@ -26,8 +26,8 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="pt-16 flex justify-between container">
-          <div className=" w-8/12 pr-6 ">
+        <div className="pt-16 lg:flex flex-none justify-between container">
+          <div className="w-full lg:w-8/12 pr-0 md:pr-6 pb-8 lg:pb-0 ">
             <h3 className="text-4xl mb-4">
               Lorem ipsum dolor sit amet, consectetur
             </h3>
@@ -47,7 +47,7 @@ const AboutSection = () => {
               eleifend justo fermentum. Sed et commodo arcu, id euismod dui.
             </p>
           </div>
-          <div className="w-4/12 ">
+          <div className="w-full lg:w-4/12 ">
             <div className=" pb-4 border-b mb-5 relative pl-5">
             <div class="absolute left-0 top-1 h-[90%] w-0.5 bg-gray-300"></div>
 

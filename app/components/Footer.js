@@ -21,7 +21,7 @@ const Footer = () => {
       <div className="py-10 flex align-bottom gap-x-20">
         <div className="container flex align-bottom gap-x-20">
           <h5 className="text-lg">Quick Links</h5>
-          <div className="flex align-middle gap-x-4">
+          <div className="flex align-middle gap-x-4 flex-wrap">
             <a href="#" className="text-white hover:text-gray-400">Home</a>
             <a href="#" className="text-white hover:text-gray-400">About Us</a>
             <a href="#" className="text-white hover:text-gray-400">Pricing</a>

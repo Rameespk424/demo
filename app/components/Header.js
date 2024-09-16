@@ -21,7 +21,7 @@ function MobileNav({ open, setOpen }) {
       <div className="flex items-center justify-start p-4 filter drop-shadow-md bg-white h-20">
       
         <a className="text-xl font-semibold" href="/">
-          LOGO
+          DEMO
         </a>
       </div>
       <div className="flex flex-col ml-4">
@@ -87,7 +87,7 @@ export default function Navbar() {
     <section className="">
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ease-in-out ${
-          scrolled ? "bg-neutral-600" : "bg-transparent"
+          scrolled ? " bg-[#000000] opacity-70" : "bg-transparent"
         }`}
       >
         <div className="container mx-auto px-4">
@@ -96,8 +96,8 @@ export default function Navbar() {
 
           <div className="flex items-center   h-20">
             <div className="w-4/12 flex items-center">
-              <a className="text-2xl font-semibold lg:text-white md:text-gray-800" href="/">
-                LOGO
+              <a className="text-2xl font-serif font-semibold lg:text-white md:text-black" href="/">
+                DEMO
               </a>
             </div>
 
@@ -108,17 +108,17 @@ export default function Navbar() {
                 onClick={() => setOpen(!open)}
               >
                 <span
-                  className={`h-1 w-full bg-white sm:bg-black rounded-lg transform transition duration-300 ease-in-out ${
+                  className={`h-1 w-full md:bg-white bg-black rounded-lg transform transition duration-300 ease-in-out ${
                     open ? "rotate-45 translate-y-3.5  " : ""
                   }`}
                 />
                 <span
-                  className={`h-1 w-full bg-white sm:bg-black rounded-lg transition-all duration-300 ease-in-out ${
+                  className={`h-1 w-full md:bg-white bg-black rounded-lg transition-all duration-300 ease-in-out ${
                     open ? "w-0 opacity-0" : "w-full"
                   }`}
                 />
                 <span
-                  className={`h-1 w-full bg-white sm:bg-black rounded-lg transform transition duration-300 ease-in-out ${
+                  className={`h-1 w-full md:bg-white bg-black rounded-lg transform transition duration-300 ease-in-out ${
                     open ? "-rotate-45 -translate-y-3.5" : ""
                   }`}
                 />
