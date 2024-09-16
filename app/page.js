@@ -6,6 +6,7 @@ import HeroSection from "./ui/HeroSection";
 import AboutSection from "./ui/AboutSection";
 import BlogSection from "./ui/BlogSection";
 import Achivement from "./ui/Achivements";
+import TextCard from "./ui/OurProcess";
 const roboto = Roboto({
   weight: ["400", "700"],
   subsets: ["latin"],
@@ -18,7 +19,8 @@ const Homepage = () => {
       <HeroSection />
       <AboutSection />
       <BlogSection />
-<Achivement />
+      <Achivement />
+      <TextCard />
     </div>
   );
 };

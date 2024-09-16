@@ -6,7 +6,7 @@ const BlogSection = () => {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    // Fetch data from the JSON file
+   
     fetch("/data/data.json")
       .then((response) => response.json())
       .then((data) => setCards(data))
