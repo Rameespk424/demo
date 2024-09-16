@@ -7,6 +7,11 @@ import AboutSection from "./ui/AboutSection";
 import BlogSection from "./ui/BlogSection";
 import Achivement from "./ui/Achivements";
 import TextCard from "./ui/OurProcess";
+import Footer from "./components/Footer";
+import Subscription from "./ui/Subscribe";
+
+
+
 const roboto = Roboto({
   weight: ["400", "700"],
   subsets: ["latin"],
@@ -21,6 +26,9 @@ const Homepage = () => {
       <BlogSection />
       <Achivement />
       <TextCard />
+      <Subscription />
+      <Footer />
+
     </div>
   );
 };

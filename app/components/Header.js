@@ -19,9 +19,9 @@ function MobileNav({ open, setOpen }) {
       } transition-transform duration-300 ease-in-out filter drop-shadow-md`}
     >
       <div className="flex items-center justify-start p-4 filter drop-shadow-md bg-white h-20">
-        {/* Logo container */}
+      
         <a className="text-xl font-semibold" href="/">
-          LOGO1
+          LOGO
         </a>
       </div>
       <div className="flex flex-col ml-4">
@@ -87,7 +87,7 @@ export default function Navbar() {
     <section className="">
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ease-in-out ${
-          scrolled ? "bg-neutral-200" : "bg-transparent"
+          scrolled ? "bg-neutral-600" : "bg-transparent"
         }`}
       >
         <div className="container mx-auto px-4">
@@ -96,8 +96,8 @@ export default function Navbar() {
 
           <div className="flex items-center   h-20">
             <div className="w-4/12 flex items-center">
-              <a className="text-2xl font-semibold text-white" href="/">
-                LOGO2
+              <a className="text-2xl font-semibold lg:text-white md:text-gray-800" href="/">
+                LOGO
               </a>
             </div>
 
@@ -108,23 +108,23 @@ export default function Navbar() {
                 onClick={() => setOpen(!open)}
               >
                 <span
-                  className={`h-1 w-full bg-white rounded-lg transform transition duration-300 ease-in-out ${
-                    open ? "rotate-45 translate-y-3.5" : ""
+                  className={`h-1 w-full bg-white sm:bg-black rounded-lg transform transition duration-300 ease-in-out ${
+                    open ? "rotate-45 translate-y-3.5  " : ""
                   }`}
                 />
                 <span
-                  className={`h-1 w-full bg-white rounded-lg transition-all duration-300 ease-in-out ${
+                  className={`h-1 w-full bg-white sm:bg-black rounded-lg transition-all duration-300 ease-in-out ${
                     open ? "w-0 opacity-0" : "w-full"
                   }`}
                 />
                 <span
-                  className={`h-1 w-full bg-white rounded-lg transform transition duration-300 ease-in-out ${
+                  className={`h-1 w-full bg-white sm:bg-black rounded-lg transform transition duration-300 ease-in-out ${
                     open ? "-rotate-45 -translate-y-3.5" : ""
                   }`}
                 />
               </div>
 
-              {/* Desktop Links */}
+             
               <div className="hidden md:flex items-center text-white w-full justify-between">
                 <div className="hidden md:flex">
                   <NavLink to="/about">About</NavLink>
@@ -136,7 +136,7 @@ export default function Navbar() {
 
                 <div className="hidden md:block">
                   <Link href="/contact" passHref>
-                    <Button className="bg-black text-white hover:bg-blue-700 w-full lg:w-auto">
+                    <Button className="bg-gray-50 text-slate-950  hover:bg-blue-700 w-full lg:w-auto">
                       Contact Us
                     </Button>
                   </Link>
