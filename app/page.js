@@ -9,7 +9,6 @@ import Achivement from "./ui/Achivements";
 import TextCard from "./ui/OurProcess";
 import Footer from "./components/Footer";
 import Subscription from "./ui/Subscribe";
-// import ResponsiveCarousel from "./components/Slider";
 
 import Testimonial from "./ui/Testimonial";
 
@@ -21,14 +20,14 @@ const roboto = Roboto({
 const Homepage = () => {
   return (
     <div className={roboto.className}>
+
       <Navbar />
       <HeroSection />
       <AboutSection />
       <BlogSection />
       <Achivement />
       <TextCard />
-    <Testimonial />
-
+      <Testimonial />
       <Subscription />
       <Footer />
 
