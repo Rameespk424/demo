@@ -9,8 +9,9 @@ import Achivement from "./ui/Achivements";
 import TextCard from "./ui/OurProcess";
 import Footer from "./components/Footer";
 import Subscription from "./ui/Subscribe";
+// import ResponsiveCarousel from "./components/Slider";
 
-
+import Testimonial from "./ui/Testimonial";
 
 const roboto = Roboto({
   weight: ["400", "700"],
@@ -26,6 +27,8 @@ const Homepage = () => {
       <BlogSection />
       <Achivement />
       <TextCard />
+    <Testimonial />
+
       <Subscription />
       <Footer />
 
