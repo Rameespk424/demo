@@ -21,17 +21,17 @@ const Counter = ({ target, speed, suffix }) => {
     let interval;
 
     if (isVisible) {
-      interval = setInterval(updateCount, 1); // Start updating count
+      interval = setInterval(updateCount, 1); 
     }
 
-    return () => clearInterval(interval); // Cleanup interval on component unmount
+    return () => clearInterval(interval); 
   }, [isVisible, target, speed]);
 
   useEffect(() => {
     const handleIntersection = ([entry]) => {
       if (entry.isIntersecting) {
         setIsVisible(true);
-        observer.unobserve(counterRef.current); // Stop observing once it's visible
+        observer.unobserve(counterRef.current); 
       }
     };
 
